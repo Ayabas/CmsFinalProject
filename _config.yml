@@ -1,0 +1,16 @@
+name: "CmsFinalProject"
+description: "My Final CMS Project"
+
+source: .
+destination: _site
+
+url: "http://ayabas.github.io/CmsFinalProject"
+baseurl: "/CmsFinalProject"
+
+paginate: 2
+paginate_path: "imageGallery/page:num"
+
+
+markdown: rdiscount
+permalink: pretty
+pygments: true
