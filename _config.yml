@@ -4,7 +4,7 @@ description: "My Final CMS Project"
 source: .
 destination: _site
 
-url: "http://ayabas.github.io/CmsFinalProject"
+url: "http://ayabas.github.io/CmsFinalProject/"
 baseurl: "/CmsFinalProject"
 
 paginate: 2
