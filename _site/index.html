@@ -55,6 +55,7 @@
     <div id="status"><p>Aya Baeshean</p></div>
   </div>
   <div id="fademenu">
+    <div id="weather2"></div>
     <div class="logo">
       <img src="/CmsFinalProject/media/logo.png" alt="logo">           
     </div>
@@ -82,6 +83,7 @@
     </nav>
     
     
+    <div id="weather"></div>
   </header>
 
   <div id="name2">
@@ -220,27 +222,7 @@
   <script src='/CmsFinalProject/js/toucheffects.js'></script>
 <script src='/CmsFinalProject/js/fluidvids.js'></script>
 <script src='/CmsFinalProject/js/velocity.js'></script>
-<script src='/CmsFinalProject/js/jquery.simpleWeather.js'></script>
-  <script>
-    $(document).ready(function() {
-      $.simpleWeather({
-        zipcode: '',
-        woeid: '20066805',
-        location: '',
-        success: function(weather) {
-          html = '<ul><li class="currently">'+weather.currently+' and </li>';
-          html += '<li>' +weather.tempAlt+'&deg;C&nbsp;</li>';
-          html += '<li> in '+weather.city+'</li></ul>';
-
-          $("#weather, #weather2").html(html);
-        },
-        error: function(error) {
-          $("#weather, #weather2").html('<p>'+error+'</p>');
-        }
-      });
-    });
-  </script>
-  <script src='/CmsFinalProject/js/script.js'></script>
+<script src='/CmsFinalProject/js/script.js'></script>
 </body>
 </html>
 

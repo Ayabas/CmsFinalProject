@@ -6,27 +6,7 @@
   <script src='{{ site.baseurl }}/js/toucheffects.js'></script>
 <script src='{{ site.baseurl }}/js/fluidvids.js'></script>
 <script src='{{ site.baseurl }}/js/velocity.js'></script>
-<script src='{{ site.baseurl }}/js/jquery.simpleWeather.js'></script>
-  <script>
-    $(document).ready(function() {
-      $.simpleWeather({
-        zipcode: '',
-        woeid: '20066805',
-        location: '',
-        success: function(weather) {
-          html = '<ul><li class="currently">'+weather.currently+' and </li>';
-          html += '<li>' +weather.tempAlt+'&deg;C&nbsp;</li>';
-          html += '<li> in '+weather.city+'</li></ul>';
-
-          $("#weather, #weather2").html(html);
-        },
-        error: function(error) {
-          $("#weather, #weather2").html('<p>'+error+'</p>');
-        }
-      });
-    });
-  </script>
-  <script src='{{ site.baseurl }}/js/script.js'></script>
+<script src='{{ site.baseurl }}/js/script.js'></script>
 </body>
 </html>
 
